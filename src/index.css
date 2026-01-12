@@ -1,0 +1,110 @@
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #e0f7fa; /* light teal background */
+  color: #333;
+  min-height: 100vh;
+}
+
+/* ===== Container Layout ===== */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 50px;
+}
+
+/* ===== Headings ===== */
+h1 {
+  color: #00796b; /* dark teal for main title */
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+/* ===== Card Style for Components ===== */
+.card {
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Different background colors for distinction */
+.props-card {
+  background-color: #f0f8ff; /* light blue */
+}
+
+.counter-card {
+  background-color: #fff3e0; /* light orange */
+}
+
+/* ===== Text Styling ===== */
+p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Conditional text colors for Props boolean */
+.text-true {
+  color: green;
+}
+
+.text-false {
+  color: red;
+}
+
+/* Conditional text colors for counter */
+.counter-odd {
+  color: green;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.counter-even {
+  color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.increment-btn {
+  background-color: #4caf50; /* green */
+}
+
+.decrement-btn {
+  background-color: #f44336; /* red */
+}
+
+/* ===== Flex layout for buttons ===== */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
