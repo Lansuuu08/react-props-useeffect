@@ -8,13 +8,14 @@ type Props = {
 
 function UseProps({ char, varchar, integer, float, booleanValue }: Props) {
   return (
-    <div className={`card props-card ${booleanValue ? "text-true" : "text-false"}`}>
+    <div className="card props-card">
       <h3>Props Component</h3>
       <p>Char: {char}</p>
       <p>Varchar: {varchar}</p>
       <p>Integer: {integer}</p>
       <p>Float: {float}</p>
-      <p>Boolean: {booleanValue.toString()}</p>
+      <p className={booleanValue ? "text-true" : "text-false"}>
+  Boolean: {booleanValue.toString()}</p>
     </div>
   );
 }
